@@ -19,12 +19,18 @@
 
 .end {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
     color: white;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
 
 .overlay-end {
     position: absolute;
@@ -37,32 +43,41 @@
 
 .font-1 {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
 }
 .font-2 {
     font-family: 'Dancing Script', cursive;    
-    font-size: 40px;
+    font-size: 2rem;
 }
 .font-3 {
     font-family: 'Lato', sans-serif;    
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .font-4 {
     font-family: 'Roboto', sans-serif;    
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .font-5 {
     font-family: 'Noto Serif', serif;
     display: block;
-    font-size: 30px;
+    font-size: 2rem;
 }
-
+.font-6 {
+    font-family: 'Dancing Script', cursive;    
+    font-size: 2rem;
+}
 .font-7 {
     font-family: 'Lato', sans-serif;    
     display: block;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 15px;
-    align-items: flex-start;
 }
+
+
+@media screen and (max-width: 768px) {
+    img {
+      max-width: 80%; /* Mengurangi lebar gambar untuk layar yang lebih kecil */
+    }
+  }
