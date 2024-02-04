@@ -3,81 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,600&display=swap');
-.overlay-container {
+
+.hero {
     position: relative;
+    min-height: 100vh;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-  }
-
-.overlay-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    color: white;
-}
-
-.end {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    color: white;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-
-.overlay-end {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
-    padding: 15px;
+    height: 100%;
+    background-image: url(../img/1.jpg);
+    z-index: -1;
 }
 
 .font-1 {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
+
 .font-2 {
-    font-family: 'Dancing Script', cursive;    
+    font-family: 'Dancing Script', cursive;   
     font-size: 2rem;
 }
+
 .font-3 {
-    font-family: 'Lato', sans-serif;    
-    font-size: 2rem;
+    font-family: 'Lato', sans-serif; 
+    font-size: 1.5rem;
 }
-
-.font-4 {
-    font-family: 'Roboto', sans-serif;    
-    font-size: 1.2rem;
-}
-
-.font-5 {
-    font-family: 'Noto Serif', serif;
-    display: block;
-    font-size: 2rem;
-}
-.font-6 {
-    font-family: 'Dancing Script', cursive;    
-    font-size: 2rem;
-}
-.font-7 {
-    font-family: 'Lato', sans-serif;    
-    display: block;
-    font-size: 1.2rem;
-    padding: 15px;
-}
-
-
-@media screen and (max-width: 768px) {
-    img {
-      max-width: 80%; /* Mengurangi lebar gambar untuk layar yang lebih kecil */
-    }
-  }
