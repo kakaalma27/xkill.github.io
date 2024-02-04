@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,600&display=swap');
+.container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: white;
+}
+.font-1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+}
+.font-2 {
+    font-family: 'Dancing Script', cursive;    
+    font-size: 40px;
+}
+.font-3 {
+    font-family: 'Lato', sans-serif;    
+    font-size: 20px;
+}
+
+.font-4 {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 18px;
+}
+
+.font-5 {
+    font-family: 'Noto Serif', serif;
+    display: block;
+    font-size: 30px;
+}
+
+.overlay-end {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
