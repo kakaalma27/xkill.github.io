@@ -91,17 +91,12 @@
     border-radius: 6px;
     text-transform: uppercase;
 }
-img {
-    width: 564px;
-    height: 846px; 
-}
-.div {
-    width: 564px;
-    height: 846px;
-}
 
-.img-x {
-    height: 420px;
-    width: 220px;
-    border-radius: 20%;
+
+
+@media (max-width: 768px) {
+    img {
+        width: 564px;
+        height: 846px; 
+    }
 }
