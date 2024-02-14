@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meta</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+.bx {
+    width: 100vw auto;
+    height: 100vh auto;
+    overflow: auto;
+    background-color: #001;
+}
+
+.my-dick, .my-dist, .my-luc {
+    position: relative;
+    max-width: 480px;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Sama kan properti background-position di sini */
+}
+.my-dick {
+    background-image: linear-gradient(to bottom, rgb(137, 137, 111) 10%, rgba(0, 0, 0, 0) 80%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0)),
+    url('img/2.jpg');
+}
+
+.my-dist {
+    background-image: linear-gradient(to bottom, rgb(134, 179, 94) 10%, rgba(0, 0, 0, 0) 80%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0)),
+    url('img/3.jpg');
+}
+
+h1 {
+    font-family: 'Luxurious Script', cursive;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Luxurious Roman', serif;
+    z-index: 1;
+}
+
+
+
+  </style>
+</head>
+<body>
+    <div class="bx">
+      <div class="my-dick mx-auto">
+        <h1 class="text-light" style="font-size: 2.5rem; left: 5%; top: 5%; position: absolute;">Fulani bin fulanul md.pl</h1>
+        <label class="text-center text-light" style="left: 10%; top: 10%; position: absolute;">Putri  ke-3 dari 10 bersaudara <br>
+          Bpk. ule & Ibu Emblek</label>
+        <p class="text-center text-light fs-2" style="top: 15%; left: 50%; position: absolute; z-index: 1;">&</p>
+        <h1 class="text-light" style="font-size: 2.5rem; right: 5%; top: 20%; position: absolute;">Fulan bin fulanul md.pl</h1>
+        <label class="text-center text-light" style="right: 5%; top: 25%; position: absolute;">Putri  ke-3 dari 10 bersaudara <br>
+          Bpk. ule & Ibu Emblek</label>
+        </div>
+        <!-- death -->
+          <div class="my-dist mx-auto">
+            <h2 class="text-light text-center">Save The Date</h2>
+          </div>
+        <!-- death -->
+        <div class="my-luc mx-auto">
+          <div class="text-light bg-secondary" style="left: 0%; position: absolute; height: 100vh; width: 23%; display: flex; align-items: center; justify-content: center;">
+            <p style="transform: rotate(360deg); transform-origin: center; writing-mode: vertical-rl; letter-spacing: 50px; text-transform: uppercase; margin: 0; font-size: 4rem; font-weight: 600;">gallery</p>
+          </div>
+          <div class="row position-absolute g-0" style="left: 23%;">
+            <div class="col-6 bg-danger" >
+              <img src="img/4.jpg" class="img-fluid vw-100" >
+            </div>
+            <div class="col-6 bg-danger">
+              <img src="img/7.jpg"  class="img-fluid">
+            </div>
+            <div class="col-12" >
+              <img src="img/9.jpg" class="img-fluid" alt="">
+            </div>
+            <!-- <div class="col-6">
+              <img src="img/10.jpg" class="img-fluid">
+            </div>
+            <div class="col-6">
+              <img src="img/6.jpg" class="img-fluid">
+            </div> -->
+          </div>
+        </div>
+        
+    </div>
+
+    <button type="button" hidden>음악 재생</button>
+
+    <script>
+    var audio = new Audio('hehe.mp3');
+  
+    window.onload = function() {
+      document.querySelector('button').addEventListener('click', function() {
+        audio.play();
+      });
+    }
+    
+    document.addEventListener('click', function() {
+      audio.play();
+    });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
