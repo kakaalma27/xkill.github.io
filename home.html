@@ -91,20 +91,59 @@ h1 {
   padding: 0;
 margin: 0;
 }
-.clock {
+.tanggal {
   position: absolute;
   top: 15%;
   left: 50%;
-  transform: translate(-50%,-50%);
-}
-h5 {
+  transform: translate(-50%, -50%);
+  white-space: nowrap; /* Menahan teks dalam satu baris */
+  display: flex;
+  justify-content: center;
   font-size: 34px;
+  font-weight: 700;
+  color: #638889;
+  letter-spacing: 8px;
+}
+
+.clock {
+  position: absolute;
+  top: 25%; /* Mengatur posisi pada tengah vertikal */
+  left: 50%; /* Mengatur posisi pada tengah horizontal */
+  transform: translate(-50%, -50%); /* Untuk memindahkan elemen ke tengah */
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 24px;
+}
+
+.time-section {
+  text-align: center;
+  margin: 10px; 
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#day,
+#hrs,
+#time {
   background-color: #638889;
   color: #F9EFDB;
+  font-size: 40px;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 12px;
+  font-weight: 600;
+  border-radius: 20%;
 }
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #638889;
+}
+
 .sidebar {
     display: flex;
     align-items: center;
@@ -147,7 +186,23 @@ h5 {
       </div>
       <div class="my-dist mx-auto">
         <h2 style="font-size: 1rem; position: absolute; left: 50%; top: 4%; transform: translate(-50%, -50%); color: #638889;">Save the date</h2>
-        <h5>this not update</h5>
+        <span class="tanggal">14 Ferari 2024</span>
+        <div class="container-sm">
+          <div class="clock">
+            <div class="time-section">
+              <span class="label">Day</span>
+              <span id="day">0</span>
+            </div>
+            <div class="time-section">
+              <span class="label">Hour</span>
+              <span id="hrs">0</span>
+            </div>
+            <div class="time-section">
+              <span class="label">Minute</span>
+              <span id="time">0</span>
+            </div>
+          </div>
+        </div>
       </div> 
       <div class="container-fluid mx-auto">
         <div class="row g-0 justify-content-center">
