@@ -256,11 +256,12 @@ margin: 0;
         </div>
       </div>
     </div>
+    <audio id="audioID" loop> <source src="hehe.mp3"  type="audio/mp3"></audio>
 
-    
-    
-    
 <script>
+
+var myaudio = document.getElementById("audioID").autoplay = true;
+
   function updateClock() {
   var currentTime = new Date();
   var hours = currentTime.getHours();
