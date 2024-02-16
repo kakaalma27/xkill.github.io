@@ -12,13 +12,12 @@
 .bx {
     width: 100vw auto;
     height: 100vh auto;
-    overflow: auto;
     background-color: #001;
 }
 
 .my-dick, 
 .my-dist, 
-.my-luc, 
+.container-fluid, 
 .my-lucky, 
 .my-sadnes {
     position: relative;
@@ -26,10 +25,7 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /* Sama kan properti background-position di sini */
-}
-.my-luc {
-  overflow: hidden;
+    background-position: center;
 }
 
 .my-sadnes {
@@ -56,6 +52,17 @@
     url('img/11.jpg');
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-cs {
+  width: 100%;
+  height: 243px;
+}
+
+
 h1 {
     font-family: 'Luxurious Script', cursive;
     z-index: 1;
@@ -74,8 +81,8 @@ h1 {
   background: linear-gradient(to right, #ffffff 0%, #330867 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* Standard property for compatibility */
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5); /* Tambahkan properti box-shadow di sini */
+  background-clip: text;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -91,8 +98,8 @@ h1 {
 }
 
 .time {
-  width: 80%;
-  height: 100%;
+  width: 50%;
+  height: 70%;
   background-color: rgba(99, 136, 137, 2);
   border-radius: 10px;
   display: flex;
@@ -100,9 +107,8 @@ h1 {
   justify-content: center;
 }
 
-
 .time span {
-  font-size: 34px;
+  font-size: 24px;
   width: 100px;
   height: 80px;
   display: inline-block;
@@ -114,22 +120,65 @@ h1 {
 
 .time span::after {
   content: '';
-  font-size: 18px;
+  font-size: 34px;
   position: absolute;
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-#day::after{
+#day::after {
   content: 'DAY';
 }
+
 #hrs::after {
   content: 'HOUR';
 }
+
 #time::after {
   content: 'TIME';
 }
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+@media screen and (max-width: 480px) {
+  .hero-time {
+    top: 20%;
+  }
+
+  .time {
+    width: 90%;
+  }
+
+  .time span {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .img-cs {
+    width: 100%;
+    height: 214px;
+  }
+
+
+.my-dick, 
+.my-dist, 
+.container-fluid, 
+.my-lucky, 
+.my-sadnes {
+    position: relative;
+    max-width: 470px;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}
+
   </style>
 </head>
 <body>
@@ -155,35 +204,33 @@ h1 {
           </div>
         </div>
       </div> 
-      <div class="my-luc mx-auto">
-          <div class="row g-0 justify-content-center">
-            <div class="col-2 bg-dark text-light d-flex align-items-center justify-content-center">
-              <div class="item vh-100" style="display: flex; align-items: center; justify-content: center; margin: 0;">
-                <p style="transform: rotate(360deg); transform-origin: center; writing-mode: vertical-rl; letter-spacing: 60px; text-transform: uppercase; font-size: 2rem; font-weight: 600;">gallery</p>
-              </div>
+      <div class="container-fluid mx-auto">
+        <div class="row g-0 justify-content-center">
+          <div class="col-md-2 col-3 bg-dark text-light">
+            <div class="sidebar">
+              <p style="transform: rotate(360deg); transform-origin: center; writing-mode: vertical-rl; letter-spacing: 60px; text-transform: uppercase; font-size: 2rem; font-weight: 600;">gallery</p>
             </div>
-            <div class="col-10 d-flex flex-column">
-              <div class="row g-0">
-                <div class="col-6 bg-dark text-light">
-                  <img src="img/4.jpg" class="img"  style="width: 100%; height: 200px; object-fit: cover; background-position: center; background-repeat: no-repeat; background-size: cover;">
-                </div>
-                <div class="col-6 bg-dark text-light">
-                  <img src="img/7.jpg" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; background-position: center; background-repeat: no-repeat; background-size: cover;">
-                </div>
+          </div>
+          <div class="col">
+            <div class="row g-0" >
+              <div class="col-6" >
+                  <img src="img/4.jpg" class="img-cs">
               </div>
-              <div class="row g-0">
-                <div class="col-12 bg-dark text-light">
-                  <img src="img/9.jpg" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; background-position: center; background-repeat: no-repeat; background-size: cover;">
-                </div>
-                <div class="col-6 bg-dark text-light">
-                  <img src="img/10.jpg" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; background-position: center; background-repeat: no-repeat; background-size: cover;">
-                </div>
-                <div class="col-6 bg-dark text-light">
-                  <img src="img/6.jpg" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; background-position: center; background-repeat: no-repeat; background-size: cover;">
-                </div>
+              <div class="col-6">
+                  <img src="img/7.jpg" class="img-cs">
+              </div>
+              <div class="col-12">
+                  <img src="img/9.jpg" class="img-cs">
+              </div>
+              <div class="col-6">
+                  <img src="img/10.jpg" class="img-cs">
+              </div>
+              <div class="col-6">
+                  <img src="img/6.jpg" class="img-cs">
               </div>
             </div>
           </div>
+        </div>
       </div>
       <div class="my-lucky mx-auto">
         <p class="fs-1">location</p>
